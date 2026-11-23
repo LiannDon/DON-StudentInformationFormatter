@@ -1,0 +1,26 @@
+# 1. Ask for the required inputs and use .strip() to remove extra spaces
+
+first_name = input("Enter your first name: ").strip()
+last_name = input("Enter your last name: ").strip()
+section = input("Enter your section: ").strip()
+favorite_subject = input("Enter your favorite subject: ").strip()
+
+# 2. Combine first and last name into a full name
+full_name = first_name + " " + last_name
+
+# 3. Format the outputs using string methods
+proper_name = full_name.title()
+upper_name = full_name.upper()
+upper_section = section.upper()
+proper_subject = favorite_subject.title()
+name_length = len(full_name)
+
+# 4. Display the required output
+print("\n--- Formatted Student Information ---")
+print("Full Name (Proper):", proper_name)
+print("Full Name (Uppercase):", upper_name)
+print("Section:", upper_section)
+print("Favorite Subject:", proper_subject)
+print("Number of Characters in Full Name:", name_length)
+
+
